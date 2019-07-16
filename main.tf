@@ -9,6 +9,6 @@ resource "null_resource" "string" {
   }
 }
 
-output "random_string" {
+output "sluchaen_string" {
   value = "${random_string.string.result}"
 }
