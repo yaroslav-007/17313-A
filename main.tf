@@ -8,3 +8,7 @@ resource "null_resource" "string" {
     command = "echo Random string is ${random_string.string.result}"
   }
 }
+
+output "random_string" {
+  value = "${random_string.string.result}"
+}
